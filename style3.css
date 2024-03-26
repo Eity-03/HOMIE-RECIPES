@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: century;
+    
+}
+body{
+    background-image:url("img/food30.jpg") ;
+    background-size: cover;
+}
+.header{
+    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 60px;
+    font-size: 17px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a {
+    text-decoration: none;
+    color: rgb(249, 246, 252);
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+    
+}
+ul li a:hover{
+    background-color: rgb(0, 0, 8);
+    color: rgb(253, 236, 2);
+}
+ul li .active a {
+    background-color: brown;
+    color: rgb(6, 68, 68);
+} 
+ .logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+
+} 
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.tittle{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+.tittle h1{
+    color: rgb(10, 10, 9);
+    font-size: 70px;
+}
+.button{
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid rgb(19, 21, 19);
+    padding: 5px 20px;
+    color: rgb(38, 50, 40);
+    font-size: 18px;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: rgb(53, 22, 208);
+    color: rgb(254, 251, 251);
+}
+.sub-menu{
+    display: none;
+    top: 6%;
+    position: relative;
+
+}
+.sub-menu ul{
+    position: absolute;
+}
+.main ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: blueviolet;
+    margin-top: 12px;
+    margin-left: -8px;
+}
+.main ul li:hover .sub-menu ul{
+    display: block;
+    margin: 6px;
+
+}
+.main ul li:hover .sub-menu ul li{
+    width: 75px;
+    padding: 5px;
+    border-bottom: 1px #ab6464;
+    background: transparent;
+    transition:0.4 ease ;
+    text-align: left;
+    border-radius: 0px;
+}
